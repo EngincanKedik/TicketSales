@@ -13,12 +13,16 @@ class ticketSalesApp {
     {
         Scanner kb = new Scanner(System.in);
         System.out.println("1. Ankara - İstanbul, 2. İstanbul - Antalya, 3. Ankara - Van, 4. İzmir - Gaziantep, 5. Çanakkale - Tokat");
+
         System.out.print("Gitmek istediğiniz seferin numarasını seçiniz: ");
         int travelChoosen = kb.nextInt();
+
         System.out.print("Gidiş-Dönüş bileti için 1, Tek yön için 2'yi tuşlayınız: ");
         int oneOrtwoTicket = kb.nextInt();
+
         System.out.print("Yaşınızı giriniz: ");
         int Age = kb.nextInt();
+
         printResult(calculatetravel(travelChoosen), oneOrtwoTicket(oneOrtwoTicket), Age);
 
     }
